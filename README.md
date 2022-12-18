@@ -33,7 +33,7 @@ The following CMake options are mandatory: `PYTHON_VE_PATH`, `MASKFUSION_MASK_RC
 
 ## Running MaskFusion
 
-==if you use ubuntu20,please use run build_bo_ver.sh==
+**if you use ubuntu20,please use run build_bo_ver.sh**
 
 
 
