@@ -33,6 +33,10 @@ The following CMake options are mandatory: `PYTHON_VE_PATH`, `MASKFUSION_MASK_RC
 
 ## Running MaskFusion
 
+==if you use ubuntu20,please use run build_bo_ver.sh==
+
+
+
 * **Select the object categories** you would like to label by MaskRCNN. To do so, adjust the array `FILTER_CLASSES` within `Core/Segmentation/MaskRCNN/MaskRCNN.py.in`. For instance, `FILTER_CLASSES = ['person', 'skateboard', 'teddy bear']` results in _skateboards_ and _teddy bears_ being tracked. In the current setup, regions that are labelled as _person_ are ignored. An empty array indicates that all possible labels should be used.
 
 * Tracking of individual objects can easily be enabled / disabled by calling `makeStatic()` and `makeNonStatic()` of instances of the `Model` class. The overall system runs more robustly if objects are only tracked when being touched by a person. We are **not** providing hand-detection software at the moment.
